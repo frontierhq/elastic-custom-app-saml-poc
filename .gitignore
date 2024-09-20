@@ -1,0 +1,11 @@
+# ide
+.env
+.vscode
+
+# node
+node_modules
+
+# ts
+dist
+
+# other
