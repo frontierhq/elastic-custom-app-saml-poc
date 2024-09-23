@@ -1,4 +1,4 @@
-import AuthRouter from './auth.ts';
 import HomeRouter from './home.ts';
+import SamlRouter from './saml.ts';
 
-export { AuthRouter, HomeRouter };
+export { HomeRouter, SamlRouter };

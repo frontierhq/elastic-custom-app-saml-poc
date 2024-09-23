@@ -1,4 +1,4 @@
-import AuthController from './auth.ts';
 import HomeController from './home.ts';
+import SamlController from './saml.ts';
 
-export { AuthController, HomeController };
+export { HomeController, SamlController };
