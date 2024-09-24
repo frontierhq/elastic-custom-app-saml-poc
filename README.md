@@ -6,7 +6,8 @@ This app demonstrates how to authenticate users of a custom application against 
 
 It makes use of the `POST /_security/saml/prepare` and `POST /_security/saml/authenticate` APIs.
 
-See [here](https://www.elastic.co/guide/en/elasticsearch/reference/current/security-api-saml-prepare-authentication.html) for more info on those APIs.
+See [SAML prepare authentication API](https://www.elastic.co/guide/en/elasticsearch/reference/current/security-api-saml-prepare-authentication.html) and [SAML authenticate API
+](https://www.elastic.co/guide/en/elasticsearch/reference/current/security-api-saml-authenticate.html) for more info.
 
 ## Design
 
