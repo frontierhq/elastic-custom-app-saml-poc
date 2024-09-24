@@ -1,11 +1,11 @@
+import dotenv from 'dotenv'
 import { Express } from 'express';
 
 import { createApp } from './app.ts';
 import { port } from './constants.ts';
 import logger from './logger.ts';
 
-// import https from 'https';
-// https.globalAgent.options.rejectUnauthorized = false;
+dotenv.config()
 
 createApp().then((app: Express) => {
   app.listen(port, () => {

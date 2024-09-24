@@ -61,7 +61,7 @@ class AuthController {
     let samlRequestData;
     try {
       const samlPrepareResponse = await this.client.security.samlPrepareAuthentication({
-        realm: 'saml2',
+        realm: process.env.ELASTIC_SAML_REALM || '',
       })
       redirectUrl = new URL(samlPrepareResponse.redirect);
       const relayState = {
