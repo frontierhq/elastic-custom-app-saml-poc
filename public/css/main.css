@@ -1,0 +1,16 @@
+pre {
+  max-height: 360px;
+  background-color: #f3f3f3;
+}
+
+div.container {
+  margin-bottom: 50px;
+}
+
+p.green {
+  color: green;
+}
+
+p.red {
+  color: red;
+}

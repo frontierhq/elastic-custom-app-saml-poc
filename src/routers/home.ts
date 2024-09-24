@@ -11,7 +11,8 @@ class HomeRouter {
 
   getRouter() {
     const router = Router();
-    router.get('/', this.homeController.get);
+    router.get('/', this.homeController.index);
+    router.get('/logout', this.homeController.logout);
     return router;
   }
 }

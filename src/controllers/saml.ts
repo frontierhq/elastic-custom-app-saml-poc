@@ -19,7 +19,41 @@ class AuthController {
       }
     );
 
+    this.callback = this.callback.bind(this);
     this.login = this.login.bind(this);
+  }
+
+  async callback(req: Request, res: Response) {
+    if (!req.body.SAMLResponse) {
+      return res.status(400).send('SAMLResponse not found in request body');
+    }
+
+    if (!req.body.RelayState) {
+      return res.status(400).send('RelayState not found in request body');
+    }
+
+    try {
+      const samlResponse = Buffer.from(req.body.SAMLResponse, 'base64');
+      const prettySamlResponse = await prettier.format(samlResponse.toString('utf-8'), { parser: 'xml', plugins: ['@prettier/plugin-xml'] });
+      logger.info(`${this.constructor.name}: received saml response:`, { data: prettySamlResponse });
+    } catch (error) {
+      logger.warn(`${this.constructor.name}: unable to parse saml response:`, { error });
+    }
+
+    const relayState = JSON.parse(Buffer.from(req.body.RelayState, 'base64').toString('utf-8'));
+
+    try {
+      const authenticateResponse = await this.client.security.samlAuthenticate({
+        content: req.body.SAMLResponse,
+        ids: [relayState.id],
+        realm: relayState.realm,
+      });
+      req.session.user = authenticateResponse;
+      return res.redirect('/');
+    } catch (error) {
+      logger.error(`${this.constructor.name}: unable to authenticate to elasticsearch:`, { error });
+      return res.status(500).send(error)
+    }
   }
 
   async login(req: Request, res: Response) {
