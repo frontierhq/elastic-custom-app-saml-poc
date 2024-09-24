@@ -49,7 +49,7 @@ This app has been built using the [Express](https://expressjs.com/) web applicat
     |---|---|
     |`http://localhost:3000/`|`http://localhost:3000/saml/callback`|
 
-1. Install a recent version of Node (this project was created with v18.15).
+1. Install a recent version of Node (this project was created with v20.11).
 1. Run `npm i` to install dependencies.
 1. Create a `.env` file with the following config:
 
