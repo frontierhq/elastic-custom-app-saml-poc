@@ -1,3 +1,5 @@
+[![build](https://github.com/frontierhq/elastic-custom-app-saml-demo/actions/workflows/build.yml/badge.svg)](https://github.com/frontierhq/elastic-custom-app-saml-demo/actions/workflows/build.yml)
+
 # Elastic Custom App SAML Demo
 
 ## Purpose
@@ -11,7 +13,7 @@ See [SAML prepare authentication API](https://www.elastic.co/guide/en/elasticsea
 
 ## Design
 
-This app has been built using the Express web application framework, and includes the following pages/actions to demonstrate the functionality:
+This app has been built using the [Express](https://expressjs.com/) web application framework, and includes the following pages/actions to demonstrate the approach:
 
 |Path|Name|Description|
 |---|---|---|
