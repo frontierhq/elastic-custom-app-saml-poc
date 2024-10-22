@@ -1,16 +1,16 @@
-# Contributing to Elastic Custom App SAML Demo
+# Contributing to Elastic Custom App SAML Starter
 
-Thank you for considering contributing to the Elastic Custom App SAML Demo project! We welcome contributions!
+Thank you for considering contributing to the Elastic Custom App SAML Starter project! We welcome contributions!
 
 ## How to contribute
 
 ### Reporting bugs
 
-If you find a bug, please report it by opening an issue in the [GitHub Issues](https://github.com/your-repo/elastic-custom-app-saml-demo/issues) section. Provide as much detail as possible, including steps to reproduce the issue, the expected behavior, and screenshots if applicable.
+If you find a bug, please report it by opening an issue in the [GitHub Issues](https://github.com/your-repo/elastic-custom-app-saml-starter/issues) section. Provide as much detail as possible, including steps to reproduce the issue, the expected behavior, and screenshots if applicable.
 
 ### Feature requests
 
-We are always looking to improve the project. If you have an idea for a new feature, please open an issue in the [GitHub Issues](https://github.com/your-repo/elastic-custom-app-saml-demo/issues) section and describe your idea in detail.
+We are always looking to improve the project. If you have an idea for a new feature, please open an issue in the [GitHub Issues](https://github.com/your-repo/elastic-custom-app-saml-starter/issues) section and describe your idea in detail.
 
 ### Submitting pull requests
 

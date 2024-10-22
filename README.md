@@ -1,10 +1,10 @@
-[![build](https://github.com/frontierhq/elastic-custom-app-saml-demo/actions/workflows/build.yml/badge.svg)](https://github.com/frontierhq/elastic-custom-app-saml-demo/actions/workflows/build.yml)
+[![build](https://github.com/frontierhq/elastic-custom-app-saml-starter/actions/workflows/build.yml/badge.svg)](https://github.com/frontierhq/elastic-custom-app-saml-starter/actions/workflows/build.yml)
 
-# Elastic Custom App SAML Demo
+# Elastic Custom App SAML Starter
 
 ## Purpose
 
-This app demonstrates how to authenticate users of a custom application against Elasticsearch when using a SAML authentication realm. For example, an in-house application that performs queries against Elasticsearch on behalf of a user to retrieve data, where users would ordinarily log into Kibana via SAML.
+This app starternstrates how to authenticate users of a custom application against Elasticsearch when using a SAML authentication realm. For example, an in-house application that performs queries against Elasticsearch on behalf of a user to retrieve data, where users would ordinarily log into Kibana via SAML.
 
 It makes use of the `POST /_security/saml/prepare` and `POST /_security/saml/authenticate` APIs.
 
@@ -13,7 +13,7 @@ See [SAML prepare authentication API](https://www.elastic.co/guide/en/elasticsea
 
 ## Design
 
-This app has been built using the [Express](https://expressjs.com/) web application framework, and includes the following pages/actions to demonstrate the approach:
+This app has been built using the [Express](https://expressjs.com/) web application framework, and includes the following pages/actions to starternstrate the approach:
 
 |Path|Name|Description|
 |---|---|---|
@@ -54,7 +54,7 @@ This app has been built using the [Express](https://expressjs.com/) web applicat
 1. Create a `.env` file with the following config:
 
     ```bash
-    ELASTIC_ENDPOINT="" # e.g. Elasticsearch HTTPS endpoint, e.g. https://custom-app-saml-demo.es.eu-west-2.aws.cloud.es.io/
+    ELASTIC_ENDPOINT="" # e.g. Elasticsearch HTTPS endpoint, e.g. https://custom-app-saml-starter.es.eu-west-2.aws.cloud.es.io/
     ELASTIC_PASSWORD=""
     ELASTIC_SAML_REALM="" # Name of the SAML realm created above, e.g. custom_app_saml
     ELASTIC_USERNAME=""
@@ -65,4 +65,4 @@ This app has been built using the [Express](https://expressjs.com/) web applicat
 
 ## Contributing
 
-Thank you for considering contributing to the Elastic Custom App SAML Demo project! We welcome contributions! See [CONTRIBUTING.md](CONTRIBUTING.md).
+Thank you for considering contributing to the Elastic Custom App SAML Starter project! We welcome contributions! See [CONTRIBUTING.md](CONTRIBUTING.md).

@@ -1,5 +1,5 @@
 {
-  "name": "elastic-custom-app-saml-demo",
+  "name": "elastic-custom-app-saml-starter",
   "version": "1.0.0",
   "description": "",
   "main": "src/index.ts",
@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/frontierhq/elastic-custom-app-saml-demo.git"
+    "url": "git+https://github.com/frontierhq/elastic-custom-app-saml-starter.git"
   },
   "author": "Fraser Davidson",
   "license": "GPL-3.0",
   "bugs": {
-    "url": "https://github.com/frontierhq/elastic-custom-app-saml-demo/issues"
+    "url": "https://github.com/frontierhq/elastic-custom-app-saml-starter/issues"
   },
-  "homepage": "https://github.com/frontierhq/elastic-custom-app-saml-demo#readme",
+  "homepage": "https://github.com/frontierhq/elastic-custom-app-saml-starter#readme",
   "dependencies": {
     "@elastic/elasticsearch": "^8.15.0",
     "@prettier/plugin-xml": "^3.4.1",
